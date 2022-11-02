@@ -3,8 +3,9 @@ using namespace std;
 int main(){
     int n, m; cin >> n >> m;
     int*a = new int[n];
-    for (int i = 0; i < n; i++) a[i] = 0;
-    for  (int i = 0; i < m; i++) {
+    
+    for (int i = 0; i < n; i++) a[i] = 0; //даем каждой вершине степень 0
+    for  (int i = 0; i < m; i++) { //увеличиваем степеи вершин
         int x, y; cin >> x >> y;
         a[x - 1]++;
         a[y - 1]++;
